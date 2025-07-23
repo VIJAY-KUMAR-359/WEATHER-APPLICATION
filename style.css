@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: url(car.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-card {
+    background: transparent;
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    width: 500px;
+    box-shadow: 20px 20px 30px rgb(25, 0, 0), -1px -1px black;
+    transition-duration: 1.3s;
+}
+
+.weather-card:hover {
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #141414;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 55px 5px 30px blue, -5px -5px 10px black;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    background: linear-gradient(red, blue, black);
+    color: white;
+    border: 3;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 400ms;
+    box-shadow: 5px 5px 30px blue, -5px -5px 10px black;
+}
+
+.search-box button:hover {
+    background: linear-gradient(red, cyan, black);
+    box-shadow: 10px 10px 20px blue, -5px -5px 10px black;
+    color: rgb(16, 15, 15);
+    font-weight: bold;
+}
+
+#temperature {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#condition {
+    font-size: 1rem;
+    color: #141313;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#humidity {
+    font-size: 1rem;
+    color: #141313;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#windspeed {
+    font-size: 1rem;
+    color: #141313;
+    font-weight: bold;
+    margin-top: 10px;
+}
